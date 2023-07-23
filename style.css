@@ -1,0 +1,76 @@
+body {
+    background-color: rgba(0, 0, 0, 0.842);
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+main.arena {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.placar-container, div.vencedor-container {
+    color: rgb(219, 161, 34);
+    margin-top: 2em;
+}
+
+div.placar-container h2 {
+    margin: 0;
+}
+
+div.placar-container, div#arena-container, div.vencedor-container  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.vencedor-container {
+    display: none;
+}
+div#arena-container {
+    height: 30em;
+    padding: 1em;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+canvas {
+    border: solid 2px white;
+}
+
+div.iniciar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#btn-iniciar {
+    color: rgb(219, 161, 34);
+    background-color: purple;
+    border-radius: 20px;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border: solid 1px purple;
+}
+
+#btn-iniciar:hover {
+    background-color: rgb(248, 57, 95);
+    transform: scale(1.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}

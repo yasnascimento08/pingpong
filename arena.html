@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>PingPong</title>
+</head>
+<body>
+    <main class="arena">
+        <div class="placar-container">
+            <h1>Placar</h2>
+            <h2>Jogador 1: <span id="pontos1">0</span> pontos</h2>
+            <h2><span id="p2">Jogador 2: </span><span id="pontos2">0</span> pontos</h2>
+        </div>
+        <div class="vencedor-container">
+            <h1>O vencedor foi o <span id="vencedor"></span></h2>
+        </div>
+        <div id="arena-container">
+            <canvas id="arena" width="800px" height="400px"></canvas>
+        </div>
+        <div class="iniciar-container">
+            <button id="btn-iniciar" onclick="iniciar()">Iniciar jogo</button>
+        </div>
+    </main>
+    <script>
+        $(document).ready(function(){
+            defineDirecao();
+            requestAnimationFrame(atualizar);
+        });
+    </script>
+</body>
+</html>
